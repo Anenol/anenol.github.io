@@ -185,7 +185,9 @@ body{
   border:none;
   padding:0;
   background: transparent;
-  cursor: zoom-in;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 .project-media img{
   width:100%;
