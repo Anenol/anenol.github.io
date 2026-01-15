@@ -40,12 +40,14 @@
           <span class="pill">JavaScript</span>
           <span class="pill">Git & GitHub</span>
           <span class="pill">3D / Blender</span>
+          <span class="pill">Roblox Studio</span>
+          <span class="pill">Zabbix</span>
         </div>
       </div>
 
       <div class="hero-right">
-        <!-- Pane oma pilt siia: assets/me.jpg -->
-        <img class="me" src="assets/me.jpg" alt="Minu foto" />
+        <!-- Pane oma pilt siia: assets/me.png või assets/me.jpg -->
+        <img class="me" src="assets/me.png" alt="Minu foto" />
         <div class="card small">
           <div class="card-title">Praegu fookus</div>
           <div class="card-text">Front-end põhitõed + projektid, Git workflow, portfoolio</div>
@@ -57,66 +59,63 @@
     <section id="projects" class="section">
       <div class="section-head">
         <h2>Projektid</h2>
-        <p>Siin on mu valitud tööd. Iga projektiga püüan õppida midagi uut ja teha asja “päriselt valmis”.</p>
+        <p>Valitud tööd ja praktilised ülesanded. Iga projekt viib eraldi lehele (pildid, kirjeldus, tulemused).</p>
       </div>
 
       <div class="grid">
-        <!-- Project 1 -->
+        <!-- 3D -->
         <article class="project">
-          <button class="project-media" data-img="assets/projects/calculator.jpg" data-title="Kalkulaator">
-            <img src="assets/projects/calculator.jpg" alt="Kalkulaator preview" />
-          </button>
-          <div class="project-body">
-            <h3>Kalkulaator</h3>
-            <p>Lihtne kalkulaator põhitehetega. Harjutasin DOM-i ja evente.</p>
-
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-
-            <div class="links">
-              <a class="link" href="https://github.com/anenol" target="_blank" rel="noreferrer">GitHub repo</a>
-              <!-- kui sul on live demo, pane siia -->
-              <!-- <a class="link" href="https://..." target="_blank" rel="noreferrer">Live</a> -->
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2 (3D) -->
-        <article class="project">
-          <button class="project-media" data-img="assets/projects/modeling1.jpg" data-title="3D modelleerimine (Blender)">
-            <img src="assets/projects/modeling1.jpg" alt="3D model preview" />
-          </button>
+          <a class="project-media" href="3d.html" aria-label="Ava 3D galerii">
+            <img src="assets/projects/3d-cover.jpg" alt="3D modelleerimine preview" />
+          </a>
           <div class="project-body">
             <h3>3D modelleerimine (Blender)</h3>
-            <p>3D mudelid ja renderid. Fookus: vorm, materjalid, valgustus.</p>
+            <p>Galerii ja valitud renderid. Fookus: vorm, materjalid, valgustus.</p>
 
             <div class="tags">
               <span>Blender</span><span>3D</span><span>Rendering</span>
             </div>
 
             <div class="links">
-              <!-- kui sul on ArtStation/Drive/Album, pane link -->
-              <a class="link" href="#" target="_blank" rel="noreferrer">Galerii (lisa link)</a>
+              <a class="link" href="3d.html">Vaata galeriid →</a>
             </div>
           </div>
         </article>
 
-        <!-- Project 3 (3D) -->
+        <!-- Roblox Studio -->
         <article class="project">
-          <button class="project-media" data-img="assets/projects/modeling2.jpg" data-title="3D stseen">
-            <img src="assets/projects/modeling2.jpg" alt="3D scene preview" />
-          </button>
+          <a class="project-media" href="roblox.html" aria-label="Ava Roblox Studio projektid">
+            <img src="assets/projects/roblox-cover.jpg" alt="Roblox Studio preview" />
+          </a>
           <div class="project-body">
-            <h3>3D stseen</h3>
-            <p>Väike stseen: kompositsioon, detailid, render-seaded.</p>
+            <h3>Roblox Studio</h3>
+            <p>Projektid ja katsetused: level design, scripting, UI ja gameplay prototüübid.</p>
 
             <div class="tags">
-              <span>Blender</span><span>Composition</span><span>Lighting</span>
+              <span>Roblox Studio</span><span>Lua</span><span>Game Dev</span>
             </div>
 
             <div class="links">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Failid / pildid (lisa link)</a>
+              <a class="link" href="roblox.html">Vaata lehte →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Zabbix -->
+        <article class="project">
+          <a class="project-media" href="zabbix.html" aria-label="Ava Zabbix installi ja seadistuse leht">
+            <img src="assets/projects/zabbix-cover.jpg" alt="Zabbix preview" />
+          </a>
+          <div class="project-body">
+            <h3>Zabbix install & seadistamine</h3>
+            <p>Paigaldus, esmane seadistus, hostid, itemid, triggerid ja dashboard (screenshotidega).</p>
+
+            <div class="tags">
+              <span>Linux</span><span>Zabbix</span><span>Monitoring</span>
+            </div>
+
+            <div class="links">
+              <a class="link" href="zabbix.html">Vaata juhendit →</a>
             </div>
           </div>
         </article>
@@ -127,7 +126,7 @@
     <section id="skills" class="section">
       <div class="section-head">
         <h2>Oskused</h2>
-        <p>Grupiti, et oleks selge, mis mul juba kindel ja mida alles õpin.</p>
+        <p>Grupiti, et oleks selge, mis on juba kindel ja mida alles õpin.</p>
       </div>
 
       <div class="skills">
@@ -150,10 +149,11 @@
         </div>
 
         <div class="card">
-          <div class="card-title">3D / Disain</div>
+          <div class="card-title">3D / Sysadmin</div>
           <ul>
             <li>Blender (model, material, render)</li>
-            <li>Kompositsioon ja valgus</li>
+            <li>Roblox Studio (Lua basics)</li>
+            <li>Zabbix (monitoring, dashboards)</li>
           </ul>
         </div>
       </div>
@@ -166,11 +166,11 @@
       </div>
       <div class="card">
         <p>
-          Olen IT tudeng ja mulle meeldib õppida läbi praktiliste projektide.
-          Eesmärk on teha selged, korralikud tööd ning areneda samm-sammult.
+          Olen IT tudeng ja mulle meeldib õppida läbi praktiliste projektide. Eesmärk on teha selged,
+          korralikud tööd ning areneda samm-sammult.
         </p>
         <p class="muted">
-          (Soovi korral lisa siia: mis suunas tahad minna — front-end, back-end, küberturve, mängud, 3D jne.)
+          (Soovi korral lisa siia 1–2 lauset: mis suunas tahad liikuda — front-end, sysadmin, game dev, 3D jne.)
         </p>
       </div>
     </section>
@@ -183,6 +183,7 @@
       </div>
 
       <div class="contact">
+        <!-- Pane siia oma päris email -->
         <a class="btn primary" href="mailto:sinuemail@example.com">Saada email</a>
         <a class="btn ghost" href="https://github.com/anenol" target="_blank" rel="noreferrer">GitHub</a>
       </div>
@@ -192,18 +193,6 @@
       </footer>
     </section>
   </main>
-
-  <!-- Image Modal -->
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-backdrop" data-close="1"></div>
-    <div class="modal-card" role="dialog" aria-modal="true">
-      <div class="modal-head">
-        <div class="modal-title" id="modalTitle">Pilt</div>
-        <button class="modal-x" data-close="1" aria-label="Sulge">✕</button>
-      </div>
-      <img id="modalImg" src="" alt="Project image" />
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
