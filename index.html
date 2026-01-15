@@ -1,54 +1,210 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <title>Andruss | IT Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e5e7eb;
-            max-width: 800px;
-            margin: auto;
-            padding: 40px;
-        }
-        h1, h2 {
-            color: #38bdf8;
-        }
-        .project {
-            background: #020617;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-        }
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Andruss | IT Portfoolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="container header">
+    <div class="brand">
+      <div class="dot"></div>
+      <span>Andruss • IT Portfoolio</span>
+    </div>
 
-<h1>Andruss</h1>
-<p>IT tudeng • huvitatud tarkvaraarendusest</p>
+    <nav class="nav">
+      <a href="#projects">Projektid</a>
+      <a href="#skills">Oskused</a>
+      <a href="#about">Minust</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
 
-<h2>Projektid</h2>
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Andruss</h1>
+        <p class="subtitle">
+          IT tudeng • huvitatud tarkvaraarendusest ja praktilistest projektidest
+        </p>
 
-<div class="project">
-    <h3>Kalkulaator</h3>
-    <p>Lihtne kalkulaator JavaScriptiga.</p>
-    <a href="#">GitHub repo</a>
-</div>
+        <div class="cta">
+          <a class="btn primary" href="#projects">Vaata projekte</a>
+          <a class="btn ghost" href="https://github.com/anenol" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
 
-<h2>Oskused</h2>
-<ul>
-    <li>HTML, CSS</li>
-    <li>JavaScript</li>
-    <li>Git & GitHub</li>
-</ul>
+        <div class="meta">
+          <span class="pill">HTML/CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Git & GitHub</span>
+          <span class="pill">3D / Blender</span>
+        </div>
+      </div>
 
-<h2>Kontakt</h2>
-<p>Email: sinuemail@example.com</p>
+      <div class="hero-right">
+        <!-- Pane oma pilt siia: assets/me.jpg -->
+        <img class="me" src="assets/me.jpg" alt="Minu foto" />
+        <div class="card small">
+          <div class="card-title">Praegu fookus</div>
+          <div class="card-text">Front-end põhitõed + projektid, Git workflow, portfoolio</div>
+        </div>
+      </div>
+    </section>
 
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projektid</h2>
+        <p>Siin on mu valitud tööd. Iga projektiga püüan õppida midagi uut ja teha asja “päriselt valmis”.</p>
+      </div>
+
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="project">
+          <button class="project-media" data-img="assets/projects/calculator.jpg" data-title="Kalkulaator">
+            <img src="assets/projects/calculator.jpg" alt="Kalkulaator preview" />
+          </button>
+          <div class="project-body">
+            <h3>Kalkulaator</h3>
+            <p>Lihtne kalkulaator põhitehetega. Harjutasin DOM-i ja evente.</p>
+
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+
+            <div class="links">
+              <a class="link" href="https://github.com/anenol" target="_blank" rel="noreferrer">GitHub repo</a>
+              <!-- kui sul on live demo, pane siia -->
+              <!-- <a class="link" href="https://..." target="_blank" rel="noreferrer">Live</a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 (3D) -->
+        <article class="project">
+          <button class="project-media" data-img="assets/projects/modeling1.jpg" data-title="3D modelleerimine (Blender)">
+            <img src="assets/projects/modeling1.jpg" alt="3D model preview" />
+          </button>
+          <div class="project-body">
+            <h3>3D modelleerimine (Blender)</h3>
+            <p>3D mudelid ja renderid. Fookus: vorm, materjalid, valgustus.</p>
+
+            <div class="tags">
+              <span>Blender</span><span>3D</span><span>Rendering</span>
+            </div>
+
+            <div class="links">
+              <!-- kui sul on ArtStation/Drive/Album, pane link -->
+              <a class="link" href="#" target="_blank" rel="noreferrer">Galerii (lisa link)</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 (3D) -->
+        <article class="project">
+          <button class="project-media" data-img="assets/projects/modeling2.jpg" data-title="3D stseen">
+            <img src="assets/projects/modeling2.jpg" alt="3D scene preview" />
+          </button>
+          <div class="project-body">
+            <h3>3D stseen</h3>
+            <p>Väike stseen: kompositsioon, detailid, render-seaded.</p>
+
+            <div class="tags">
+              <span>Blender</span><span>Composition</span><span>Lighting</span>
+            </div>
+
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Failid / pildid (lisa link)</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Oskused</h2>
+        <p>Grupiti, et oleks selge, mis mul juba kindel ja mida alles õpin.</p>
+      </div>
+
+      <div class="skills">
+        <div class="card">
+          <div class="card-title">Front-end</div>
+          <ul>
+            <li>HTML, semantika</li>
+            <li>CSS (layout, responsive)</li>
+            <li>JavaScript (DOM, events)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Tööriistad</div>
+          <ul>
+            <li>Git (commit, branch, merge)</li>
+            <li>GitHub (repo, Pages)</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">3D / Disain</div>
+          <ul>
+            <li>Blender (model, material, render)</li>
+            <li>Kompositsioon ja valgus</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>Minust</h2>
+      </div>
+      <div class="card">
+        <p>
+          Olen IT tudeng ja mulle meeldib õppida läbi praktiliste projektide.
+          Eesmärk on teha selged, korralikud tööd ning areneda samm-sammult.
+        </p>
+        <p class="muted">
+          (Soovi korral lisa siia: mis suunas tahad minna — front-end, back-end, küberturve, mängud, 3D jne.)
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Kontakt</h2>
+        <p>Kui tahad ühendust võtta või vaadata rohkem mu töid:</p>
+      </div>
+
+      <div class="contact">
+        <a class="btn primary" href="mailto:sinuemail@example.com">Saada email</a>
+        <a class="btn ghost" href="https://github.com/anenol" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Andruss</span>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Image Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div class="modal-title" id="modalTitle">Pilt</div>
+        <button class="modal-x" data-close="1" aria-label="Sulge">✕</button>
+      </div>
+      <img id="modalImg" src="" alt="Project image" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
