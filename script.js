@@ -37,3 +37,29 @@ modal.addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeModal();
 });
+
+// CV modal
+const openCVBtn = document.getElementById("openCV");
+const cvModal = document.getElementById("cvModal");
+
+function openCV() {
+  cvModal.classList.add("show");
+  cvModal.setAttribute("aria-hidden", "false");
+}
+
+function closeCV() {
+  cvModal.classList.remove("show");
+  cvModal.setAttribute("aria-hidden", "true");
+}
+
+if (openCVBtn && cvModal) {
+  openCVBtn.addEventListener("click", openCV);
+
+  cvModal.addEventListener("click", (e) => {
+    if (e.target && e.target.getAttribute("data-close") === "cv") closeCV();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && cvModal.classList.contains("show")) closeCV();
+  });
+}
