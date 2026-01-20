@@ -31,10 +31,10 @@
         </p>
 
         <div class="cta">
-  <a class="btn primary" href="#projects">Vaata projekte</a>
-  <a class="btn ghost" href="https://github.com/anenol" target="_blank" rel="noreferrer">GitHub</a>
-  <button class="btn ghost" id="openCV" type="button">Minu CV</button>
-</div>
+          <a class="btn primary" href="#projects">Vaata projekte</a>
+          <a class="btn ghost" href="https://github.com/anenol" target="_blank" rel="noreferrer">GitHub</a>
+          <button class="btn ghost" id="openCV" type="button">Minu CV</button>
+        </div>
 
         <div class="meta">
           <span class="pill">Serverite haldus</span>
@@ -110,12 +110,12 @@
           </a>
           <div class="project-body">
             <h3>Zabbix</h3>
-            <p>Paigaldus.</p>
+            <p>Arvutite jälgimine ja monitoorimine klassivõrgus.</p>
             <div class="tags">
-              <span>Linux</span><span>Zabbix</span><span>Monitoring</span>
+              <span>Monitoring</span><span>Võrgud</span>
             </div>
             <div class="links">
-              <a class="link" href="zabbix.html">Vaata juhendit →</a>
+              <a class="link" href="zabbix.html">Vaata lehte →</a>
             </div>
           </div>
         </article>
@@ -188,6 +188,24 @@
           ja praktilise kogemuse ülesehitamisele.
         </p>
       </div>
+
+      <!-- LOCATION CARD -->
+      <div class="card" style="margin-top:16px;">
+        <div class="card-title">Asukoht</div>
+        <p class="muted" style="margin-top:6px;">Kadrina, Eesti</p>
+
+        <div style="margin-top:12px; border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,.10);">
+          <iframe
+            title="Kadrina kaart"
+            src="https://www.google.com/maps?q=Kadrina,+Estonia&z=13&output=embed"
+            width="100%"
+            height="320"
+            style="border:0; display:block;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
@@ -219,26 +237,26 @@
     </div>
   </div>
 
-<!-- CV MODAL -->
-<div class="modal" id="cvModal" aria-hidden="true">
-  <div class="modal-backdrop" data-close="cv"></div>
-  <div class="modal-card" role="dialog" aria-modal="true">
-    <div class="modal-head">
-      <div class="modal-title">Minu CV (PDF)</div>
-      <div style="display:flex; gap:10px; align-items:center;">
-        <a class="btn ghost" href="assets/cv.pdf" download>Lae alla</a>
-        <button class="modal-x" data-close="cv" aria-label="Sulge">✕</button>
+  <!-- CV MODAL -->
+  <div class="modal" id="cvModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="cv"></div>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div class="modal-title">Minu CV (PDF)</div>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <a class="btn ghost" href="assets/cv.pdf" download>Lae alla</a>
+          <button class="modal-x" data-close="cv" aria-label="Sulge">✕</button>
+        </div>
       </div>
-    </div>
 
-    <iframe
-      src="assets/cv.pdf"
-      style="width:100%; height:75vh; border:0; display:block;"
-      title="Andres Ladoškin CV">
-    </iframe>
+      <iframe
+        src="assets/cv.pdf"
+        style="width:100%; height:75vh; border:0; display:block;"
+        title="Andres Ladoškin CV">
+      </iframe>
+    </div>
   </div>
-</div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
