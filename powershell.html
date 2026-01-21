@@ -20,121 +20,55 @@
   <main class="container section">
     <div class="section-head">
       <h2>PowerShell (kooliülesanded)</h2>
-      <p>
-        Siin on minu tehtud PowerShelli skriptid ja praktilised ülesanded. Iga alamprojekt sisaldab lühikest kokkuvõtet
-        (“mida tegin”) ja vastavaid tõenduspilte (screenshotid + koodipilt).
-      </p>
+      <p>Vali ülesanne. Iga link viib eraldi lehele, kus on ainult pildid + koodipilt.</p>
+    </div>
+
+    <div class="grid" style="margin-top:16px;">
+      <article class="project">
+        <a class="project-media" href="powershell/31.html" aria-label="Ava 3.1">
+          <img src="assets/projects/powershell-31.jpg" alt="PowerShell 3.1 cover">
+        </a>
+        <div class="project-body">
+          <h3>3.1 Failisüsteem ja õigused</h3>
+          <div class="links"><a class="link" href="powershell/31.html">Ava →</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="project-media" href="powershell/34.html" aria-label="Ava 3.4">
+          <img src="assets/projects/powershell-34.jpg" alt="PowerShell 3.4 cover">
+        </a>
+        <div class="project-body">
+          <h3>3.4 Backup ja varundamine</h3>
+          <div class="links"><a class="link" href="powershell/34.html">Ava →</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="project-media" href="powershell/35.html" aria-label="Ava 3.5">
+          <img src="assets/projects/powershell-35.jpg" alt="PowerShell 3.5 cover">
+        </a>
+        <div class="project-body">
+          <h3>3.5 Ressursimonitooring</h3>
+          <div class="links"><a class="link" href="powershell/35.html">Ava →</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="project-media" href="powershell/36.html" aria-label="Ava 3.6">
+          <img src="assets/projects/powershell-36.jpg" alt="PowerShell 3.6 cover">
+        </a>
+        <div class="project-body">
+          <h3>3.6 Protsessid ja logid</h3>
+          <div class="links"><a class="link" href="powershell/36.html">Ava →</a></div>
+        </div>
+      </article>
     </div>
 
     <div class="card" style="margin-top:16px;">
-      <div class="card-title">Mida ma siit õppisin</div>
-      <ul>
-        <li>Automatiseerimine (skriptid + ajastamine)</li>
-        <li>Failid/kaustad, õigused ja kasutajate ligipääs</li>
-        <li>Backup-loogika ja kontroll (exit code)</li>
-        <li>Ressursimonitooring ja logide lugemine</li>
-      </ul>
-    </div>
-
-    <!-- 4 ALAMPROJEKTI -->
-    <div class="grid" style="margin-top:16px;">
-
-      <!-- 3.1 -->
-      <article class="project">
-        <div class="project-body">
-          <h3>3.1 Failisüsteem ja õigused</h3>
-          <p>
-            <strong>Mida tegin:</strong> lõin kursusekausta ja alamkaustad, lisasin testi .txt faili ning seadistasin ligipääsuõigused
-            nii, et erinevatel gruppidel oleks kaustadele vastavad õigused (ligipääs/ainult nähtav).
-          </p>
-          <div class="tags">
-            <span>Folders</span><span>Permissions</span><span>Groups</span>
-          </div>
-        </div>
-
-        <a class="project-media" href="assets/powershell/31-1.png" target="_blank" rel="noreferrer">
-          <img src="assets/powershell/31-1.png" alt="3.1 screenshot 1">
-        </a>
-        <div class="project-body" style="padding-top:10px;">
-          <div class="links" style="gap:10px;">
-            <a class="link" href="assets/powershell/31-2.png" target="_blank" rel="noreferrer">Ava pilt 2 →</a>
-            <a class="link" href="assets/powershell/31-code.png" target="_blank" rel="noreferrer">Ava koodipilt →</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 3.4 -->
-      <article class="project">
-        <div class="project-body">
-          <h3>3.4 Backup ja varundamine</h3>
-          <p>
-            <strong>Mida tegin:</strong> tegin skripti, mis kopeerib minu failid varunduskausta, loob kausta kui seda pole,
-            lisasin kontrollid/exit code ning automatiseerisin käivitamise Task Scheduleriga.
-          </p>
-          <div class="tags">
-            <span>Backup</span><span>Task Scheduler</span><span>Exit codes</span>
-          </div>
-        </div>
-
-        <a class="project-media" href="assets/powershell/34-1.png" target="_blank" rel="noreferrer">
-          <img src="assets/powershell/34-1.png" alt="3.4 screenshot 1">
-        </a>
-        <div class="project-body" style="padding-top:10px;">
-          <div class="links" style="gap:10px;">
-            <a class="link" href="assets/powershell/34-2.png" target="_blank" rel="noreferrer">Ava pilt 2 →</a>
-            <a class="link" href="assets/powershell/34-code.png" target="_blank" rel="noreferrer">Ava koodipilt →</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 3.5 -->
-      <article class="project">
-        <div class="project-body">
-          <h3>3.5 Ressursimonitooring</h3>
-          <p>
-            <strong>Mida tegin:</strong> tegin skripti, mis kuvab CPU/RAM/HDD(SSD) kasutust, salvestab tulemuse .txt faili ning
-            seadistasin automatiseerimise, et andmed uuenevad regulaarselt.
-          </p>
-          <div class="tags">
-            <span>CPU</span><span>RAM</span><span>Disk</span><span>Logging</span>
-          </div>
-        </div>
-
-        <a class="project-media" href="assets/powershell/35-1.png" target="_blank" rel="noreferrer">
-          <img src="assets/powershell/35-1.png" alt="3.5 screenshot 1">
-        </a>
-        <div class="project-body" style="padding-top:10px;">
-          <div class="links" style="gap:10px;">
-            <a class="link" href="assets/powershell/35-2.png" target="_blank" rel="noreferrer">Ava pilt 2 →</a>
-            <a class="link" href="assets/powershell/35-code.png" target="_blank" rel="noreferrer">Ava koodipilt →</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 3.6 -->
-      <article class="project">
-        <div class="project-body">
-          <h3>3.6 Protsessid ja logid</h3>
-          <p>
-            <strong>Mida tegin:</strong> tegin skripti, mis käivitab ja peatab rakendusi, loeb Windowsi logisid ning kirjutab tulemused faili.
-            Lisaks analüüsisin logide sisu (nt info/warning/error) ja kogusin protsesside ressursikasutuse näiteid.
-          </p>
-          <div class="tags">
-            <span>Processes</span><span>Event logs</span><span>Automation</span>
-          </div>
-        </div>
-
-        <a class="project-media" href="assets/powershell/36-1.png" target="_blank" rel="noreferrer">
-          <img src="assets/powershell/36-1.png" alt="3.6 screenshot 1">
-        </a>
-        <div class="project-body" style="padding-top:10px;">
-          <div class="links" style="gap:10px;">
-            <a class="link" href="assets/powershell/36-2.png" target="_blank" rel="noreferrer">Ava pilt 2 →</a>
-            <a class="link" href="assets/powershell/36-code.png" target="_blank" rel="noreferrer">Ava koodipilt →</a>
-          </div>
-        </div>
-      </article>
-
+      <p class="muted" style="margin:0;">
+        Pildid avan neid eraldi “Ava GitHubis” nupust, et saaks GitHubis otse vaadata ja vajadusel alla laadida.
+      </p>
     </div>
   </main>
 
