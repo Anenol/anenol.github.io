@@ -3,64 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PowerShell 3.1 | Andres Ladoškin</title>
+  <title>Failisüsteem ja õigused | Andres Ladoškin</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <header class="container header">
-    <div class="brand">
-      <div class="dot"></div>
-      <span>Andres Ladoškin • PowerShell 3.1</span>
-    </div>
-    <nav class="nav">
-      <a href="../powershell.html">← Tagasi PowerShelli</a>
-      <a href="../index.html#projects">Portfoolio</a>
-    </nav>
+    <div class="brand"><div class="dot"></div><span>Andres Ladoškin • PowerShell</span></div>
+    <nav class="nav"><a href="../powershell.html">← Tagasi PowerShelli</a><a href="../index.html#projects">Portfoolio</a></nav>
   </header>
 
   <main class="container section">
     <div class="section-head">
-      <h2>3.1 Failisüsteem ja õigused</h2>
-      <p class="muted">Tõendus: screenshotid</p>
-    </div>
-
-    <div class="card" style="margin-top:16px;">
-      <div class="card-title">Mida tegin</div>
-      <ul>
-        <li>Lõin kausta <strong>IT-KURSUS</strong> ning vajadusel alamkaustad <strong>IT23</strong> ja <strong>IT24</strong></li>
-        <li>Lõin <strong>IT23</strong> kausta suvalise nimega <strong>.txt</strong> faili ja lisasin sinna sisu</li>
-        <li>Seadistasin õigused nii, et ligipääsud vastaksid kursuste/gruppide nõuetele</li>
-      </ul>
+      <h2>Failisüsteem ja õigused</h2>
     </div>
 
     <div class="grid" style="margin-top:16px;">
-      <article class="project">
-        <button class="project-media ps-img" data-img="../assets/powershell/31/1.png" data-title="3.1 – pilt 1">
-          <img src="../assets/powershell/31/1.png" alt="3.1 pilt 1">
-        </button>
-      </article>
-
-      <article class="project">
-        <button class="project-media ps-img" data-img="../assets/powershell/31/2.png" data-title="3.1 – pilt 2">
-          <img src="../assets/powershell/31/2.png" alt="3.1 pilt 2">
-        </button>
-      </article>
-
-      <article class="project">
-        <button class="project-media ps-img" data-img="../assets/powershell/31/3.png" data-title="3.1 – pilt 3">
-          <img src="../assets/powershell/31/3.png" alt="3.1 pilt 3">
-        </button>
-      </article>
-
-      <article class="project">
-        <button class="project-media ps-img" data-img="../assets/powershell/31/4.png" data-title="3.1 – pilt 4">
-          <img src="../assets/powershell/31/4.png" alt="3.1 pilt 4">
-        </button>
-      </article>
+      <article class="project"><button class="project-media ps-img" data-img="../assets/powershell/31/1.png" data-title="Failisüsteem ja õigused"><img src="../assets/powershell/31/1.png" alt="pilt 1"></button></article>
+      <article class="project"><button class="project-media ps-img" data-img="../assets/powershell/31/2.png" data-title="Failisüsteem ja õigused"><img src="../assets/powershell/31/2.png" alt="pilt 2"></button></article>
+      <article class="project"><button class="project-media ps-img" data-img="../assets/powershell/31/3.png" data-title="Failisüsteem ja õigused"><img src="../assets/powershell/31/3.png" alt="pilt 3"></button></article>
+      <article class="project"><button class="project-media ps-img" data-img="../assets/powershell/31/4.png" data-title="Failisüsteem ja õigused"><img src="../assets/powershell/31/4.png" alt="pilt 4"></button></article>
     </div>
   </main>
 
-  <!-- LIGHTBOX MODAL (ainult selle lehe piltide jaoks) -->
   <div class="modal" id="psModal" aria-hidden="true">
     <div class="modal-backdrop" data-close="ps"></div>
     <div class="modal-card" role="dialog" aria-modal="true">
@@ -68,41 +32,19 @@
         <div class="modal-title" id="psModalTitle">Pilt</div>
         <button class="modal-x" data-close="ps" aria-label="Sulge">✕</button>
       </div>
-      <img id="psModalImg" src="" alt="PowerShell pilt">
+      <img id="psModalImg" src="" alt="Pilt">
     </div>
   </div>
 
   <script>
-    // PowerShell piltide lightbox (ei sega su teisi modale)
     const psModal = document.getElementById("psModal");
     const psModalImg = document.getElementById("psModalImg");
     const psModalTitle = document.getElementById("psModalTitle");
-
-    function openPs(img, title) {
-      psModal.classList.add("show");
-      psModal.setAttribute("aria-hidden", "false");
-      psModalImg.src = img;
-      psModalTitle.textContent = title || "Pilt";
-    }
-    function closePs() {
-      psModal.classList.remove("show");
-      psModal.setAttribute("aria-hidden", "true");
-      psModalImg.src = "";
-    }
-
-    document.querySelectorAll(".ps-img").forEach(btn => {
-      btn.addEventListener("click", () => {
-        openPs(btn.getAttribute("data-img"), btn.getAttribute("data-title"));
-      });
-    });
-
-    psModal.addEventListener("click", (e) => {
-      if (e.target && e.target.getAttribute("data-close") === "ps") closePs();
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && psModal.classList.contains("show")) closePs();
-    });
+    function openPs(img, title){ psModal.classList.add("show"); psModal.setAttribute("aria-hidden","false"); psModalImg.src=img; psModalTitle.textContent=title||"Pilt"; }
+    function closePs(){ psModal.classList.remove("show"); psModal.setAttribute("aria-hidden","true"); psModalImg.src=""; }
+    document.querySelectorAll(".ps-img").forEach(btn=>btn.addEventListener("click",()=>openPs(btn.getAttribute("data-img"),btn.getAttribute("data-title"))));
+    psModal.addEventListener("click",(e)=>{ if(e.target && e.target.getAttribute("data-close")==="ps") closePs(); });
+    document.addEventListener("keydown",(e)=>{ if(e.key==="Escape" && psModal.classList.contains("show")) closePs(); });
   </script>
 </body>
 </html>
